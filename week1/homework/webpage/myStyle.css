@@ -1,0 +1,36 @@
+body {
+background-color: #2bc3ff;
+
+}
+#bird{
+   
+    position: absolute;
+    bottom: 0px;
+    left:500px;
+}
+
+#bird-head {
+background-color:#000 ;
+height: 300px;
+width: 300px;
+float:left;
+border-radius:90px 90px 0px 0px;
+}
+#bird-eye{
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    margin-top: 90px;
+    margin-left: 125px;
+}
+#bird-beak{
+   
+    margin-top: 90px;
+    float: right;
+    position: relative;
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #ffd946;
+}

@@ -1,0 +1,17 @@
+1-
+create a hidden folder:
+$ mkdir .hiddenfolder
+
+create a hidden file:
+$ touch .hiddenfile.txt
+
+list hidden files and folders:
+$ ls -a 
+
+2-
+create multiple files:
+mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+
+3-
+newline
+$ echo first message; echo second message
