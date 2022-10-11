@@ -159,6 +159,11 @@ border-radius: 10px;
     width: 40vw;
     /*padding: 1em;*/
 }
+@media screen and (max-width: 600px) {
+    .area-item{
+        width: 80vw;
+    }
+}
 .area-item a{
     color: rgb(80, 80, 80);
     font-weight: 300;
