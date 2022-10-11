@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
+}
+span{
+    border-bottom: 1px groove rgb(80, 80, 80);
+    
+}
+a{
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px
+}
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px
+}
+
+li{
+    list-style:none;
+}
+.m-1
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.m-2
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.m-3
+{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.p-1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.p-2{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.gray{
+    color: rgb(62, 62, 62);
+}
+
+/* Navigation bar */
+.menu{
+    display: flex;
+}
+#logo{
+    
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+    font-size: 24px;
+    font-weight: 400;
+    float: left;
+}
+.nav-justify{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar{
+    padding: 1.5rem;
+    background-color: black;
+       
+}
+.nav-bar  li{
+    display: inline;
+    margin: 1rem;
+  
+}
+.nav-bar  a{
+   
+    color: white;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+   
+}
+.selected-btn{
+    background-color:white;
+    color: black!important;
+    border-radius: 10px;
+}
+.nav-bar  li:hover{
+background-color:rgb(85, 83, 83);
+border-radius: 10px;
+
+}
+
+
+/* header */
+
+#header-image{
+    background-image: url(images/DotCom_Update_Earner_bg2x.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#scenery-image{
+    background-image: url(images/HP-U4B-NYC-bkg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 50%;
+}
+
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    padding: 40px;
+}
+.content-item{
+    padding:1em;
+}
+#buttonblack
+{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*section main*/
+/**/
+.center-area{
+   margin:3em;
+   
+}
+.area{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.area-item{
+    width: 40vw;
+    /*padding: 1em;*/
+}
+.area-item a{
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+/*section down*/
+.down-area{
+    background-color: rgb(240, 240, 240);
+    height: 500px;
+}
+.gray-area{
+    padding-left: 3em;
+}
+#card-holder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    float: left;
+    align-items: center;
+    background-color: white;
+    min-width: 370px;
+}
+card a{
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 1rem;
+
+}
+
+.uber-logo{
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    
+}
+.uber-link{
+    float: right;
+    position: relative;
+    margin-right: 15px;
+}
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+.ul-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+.ul-item{
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.ul-item div{
+    padding:10px;
+}
+.ul-item div a:hover{
+    color: rgb(80, 80, 80);
+}
