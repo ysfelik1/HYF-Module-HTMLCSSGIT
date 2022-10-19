@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="homeStyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Who is Yusuf</title>
 </head>
-<body>
-<div id="header" class="text-align-center">
-    <h1>Welcome my personal page. Here are somethings about me!</h1>
-  
-</div>
-<div  class="m-t-7 p-2">
-    <div id="topContainer">
-        <div class="float-left" ><img id="img-profile" src="mypicture.png"/></div>
-    <div class="float-left m-l-2 w-70">
-        <h3>About me</h3>
-        <p>My name is Yusuf Elik. I born in Istanbul-TURKEY(1989). I am a Programmer. Now i am living in The Netherland and looking for future. By the HYF i hope will hack my future. I like scuba diving, chess, music, video games.   </p>
-        <p>Nowadays I just focused about our Program to be a successfull developer.</p>
-    </div>
-    </div>
-     <div id="bottomContainer" class="p-t-2">
-        <div class="m-l-2">
-            <p>Education;</p>
-            <ul>
-                <li>Istanbul Industry Highschool,Software Tech: 2004-2006</li>
-                <li>Izmir Univercity,Programing:2007-2009 </li>
-                <li>HackYourFutere,Full Stack Web Development:2022-2023</li>
-            </ul>
-        </div>
-        <div class="m-l-2">
-            <p>Work experience;</p>
-            <ul>
-                <li>YouSoft,Web Developer: 2009-2019</li>
-                <li>MyDataTech,Database Developer: 2020-2021</li>
-                <li>HackYourFutere, Full Stack Web Developer: 2022-</li>
-            </ul>    
-        </div>
-    </div> 
-</div>
 
+<body>
+    <div id="header" class="text-align-center">
+        <h1>Welcome my personal page. Here are somethings about me!</h1>
+    </div>
+    <div class="container">
+        <div id="topContainer">
+            <div class="card card-col-lg ">
+                <div class="card-body">
+                    <div class="float-left m-l-2"><img id="img-profile" src="mypicture.png" /></div>
+                    <div class="float-left m-l-2 w-60">
+                        <div class="card-flex">
+                        <img class="img-icon" src="user.png" alt="person"><h2>About me</h2>
+                    </div>
+                        <p>My name is Yusuf Elik. I born in Istanbul-TURKEY(1989). I am a Programmer. Now i am living in
+                            The
+                            Netherland and looking for a future. By the HackYourFutere i hope will hack my future. I
+                            like scuba diving,
+                            chess, music, video games. </p>
+                        <p>Nowadays I just focused HackYourFutere Program to be a successfull developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomContainer" class="p-t-2">
+            <div class="card card-col-md m-r-2">
+                <div class="card-header card-flex">
+                    <img class="img-icon" src="mortarboard.png" alt="education"><h3>Education</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Istanbul Industry Highschool,Software Tech: 2004-2006</li>
+                        <li>Izmir Univercity,Programing:2007-2009 </li>
+                        <li>HackYourFutere,Full Stack Web Development:2022-2023</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card card-col-md">
+                <div class="card-header card-flex">
+                  <img class="img-icon" src="suitcase.png" alt="work"><h3>Work experience</h3>
+                    
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>YouSoft,Web Developer: 2009-2019</li>
+                        <li>MyDataTech,Database Developer: 2020-2021</li>
+                        <li>HackYourFutere, Full Stack Web Developer: 2022-2023</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
