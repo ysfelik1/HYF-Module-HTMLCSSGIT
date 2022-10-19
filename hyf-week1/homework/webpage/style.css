@@ -154,6 +154,7 @@ footer img {
     display: flex;
     justify-content: flex-start;
     position: relative;
+    align-items: center;
 }
 
 .card-header {
