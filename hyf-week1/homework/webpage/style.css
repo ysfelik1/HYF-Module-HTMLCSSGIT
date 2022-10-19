@@ -31,8 +31,8 @@ li {
     padding: 5px;
 }
 
-a img:hover{
-    box-shadow:.2rem .2rem .2rem .2rem #353138;
+a img:hover {
+    box-shadow: .2rem .2rem .2rem .2rem #353138;
 
 }
 
@@ -47,14 +47,16 @@ header {
     text-align: center;
     width: 100%;
 }
-footer{
+
+footer {
     background-color: #000;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
-footer img{
+
+footer img {
     width: 40px;
     height: 40px;
     margin-left: 1rem;
@@ -124,6 +126,7 @@ footer img{
     padding-top: 2rem;
 }
 
+
 /*card*/
 
 .card {
@@ -162,40 +165,20 @@ footer img{
 
 }
 
-.card-col-md {
-
-    flex: 0 0 48%;
-    max-width: 48%;
-}
-
 .card-col-lg {
 
     flex: 0 0 100%;
     max-width: 100%;
 }
 
+/* Small devices */
 
-/* Medium devices  */
-@media only screen and (max-width: 970px) {
-    .card-col-md {
+
+@media only screen and (max-width: 600px) {
+    .card-width {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
-    .container {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    h1 {
-        font-size: 20px !important;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-/* Small devices */
-@media only screen and (max-width: 600px) {
 
     #img-profile {
 
@@ -220,4 +203,25 @@ footer img{
         font-size: small;
         font-weight: 300;
     }
+
+}
+
+/* Medium devices  */
+@media only screen and (max-width: 970px) {
+    .card-width {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h1 {
+        font-size: 20px !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
 }
