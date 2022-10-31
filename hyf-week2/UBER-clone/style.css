@@ -2,14 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
 span{
     border-bottom: 1px groove rgb(80, 80, 80);
     
 }
+p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
 a{
     text-decoration: none;
+    
 }
 img {
     width: 100%;
@@ -22,7 +30,7 @@ h2{
 h3{
     font-size: 24px;
     font-weight: 600;
-    line-height: 30px
+    line-height: 30px;
 }
 
 li{
@@ -40,8 +48,8 @@ li{
 }
 .m-3
 {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .p-1{
     padding-top: 1em;
@@ -111,6 +119,7 @@ border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
+    padding: 4rem 6rem;
 }
 #scenery-image{
     background-image: url(images/HP-U4B-NYC-bkg.webp);
@@ -119,25 +128,84 @@ border-radius: 10px;
     background-size: cover;
     min-width: 100%;
     min-height: 50%;
+   
+}
+#tab-holder{
+    width: 50%;
+}
+
+#tabs-head{
+    background-color: #f3f3f3;
+    height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-bottom: 1px solid #EEEEEE;
+}
+#tabs-body{
+    background-color: white;
+    height: 450px;
+   
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 52px;
+    border-bottom: 3px groove rgb(12, 12, 12);
+}
+.tab img{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 1rem;
+}
+.tab span{
+    border-bottom:none;
+    
+}
+.tab-text{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.tab span:hover{
+    color: gray;
+}
+.tab-content{
+    padding: 2rem 3rem;
+}
+.tab-content div a {
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+}
+.tab-content div h2 {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.tab-content div{
+
+    padding: .7rem 0;
 }
 
 .content{
-    
     display: flex;
     flex-direction: column;
     column-gap: 30px;
-    padding: 40px;
+    padding: 3rem 5rem;
 }
 .content-item{
     padding:1em;
 }
-#buttonblack
+.buttonblack
 {
-    padding: 5px;
+    padding: 5px 20px;
     background-color: black;
     color: white;
     height: 50px;
-    width: 120px;
+    width: auto;
     border-radius: 8px;
     font-size: 18px;
     font-weight: 500;
@@ -146,7 +214,7 @@ border-radius: 10px;
 /*section main*/
 /**/
 .center-area{
-   margin:3em;
+   margin:6rem;
    
 }
 .area{
@@ -173,14 +241,14 @@ border-radius: 10px;
 /*section down*/
 .down-area{
     background-color: rgb(240, 240, 240);
-    height: 500px;
+    
 }
 .gray-area{
-    padding-left: 3em;
+    padding:2rem 6rem;
 }
 #card-holder{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .card{
@@ -213,7 +281,7 @@ card a{
 footer{
     background-color: black;
     color: white;
-    padding: 3rem;
+    padding: 6rem;
 }
 .ul-list
 {
