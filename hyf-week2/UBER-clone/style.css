@@ -11,9 +11,9 @@ span{
 }
 p{
     font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 2rem;
 }
 a{
     text-decoration: none;
@@ -23,14 +23,15 @@ img {
     width: 100%;
 }
 h2{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 40px
+    line-height: 3rem;
 }
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 2rem
+    ;
 }
 
 li{
@@ -65,6 +66,8 @@ li{
 }
 
 /* Navigation bar */
+
+
 .menu{
     display: flex;
 }
@@ -82,8 +85,9 @@ li{
     justify-content: space-between;
 }
 .nav-bar{
-    padding: 1.5rem;
+    padding: 1.3rem;
     background-color: black;
+    padding-right: 3rem;
        
 }
 .nav-bar  li{
@@ -95,9 +99,9 @@ li{
    
     color: white;
     font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1rem;
    
 }
 .selected-btn{
@@ -109,7 +113,7 @@ li{
 background-color:rgb(85, 83, 83);
 border-radius: 10px;
 
-}
+} 
 
 
 /* header */
@@ -120,6 +124,9 @@ border-radius: 10px;
     background-repeat: no-repeat;
     height: 600px;
     padding: 4rem 6rem;
+    background-position: center center;
+   
+    
 }
 #scenery-image{
     background-image: url(images/HP-U4B-NYC-bkg.webp);
@@ -131,21 +138,27 @@ border-radius: 10px;
    
 }
 #tab-holder{
-    width: 50%;
+    position: absolute;
+    top: 8rem;
+    left: 6rem;
+    width: 44%;
 }
+.active {
+    border-bottom: 3px groove rgb(12, 12, 12);
 
+  }
 #tabs-head{
     background-color: #f3f3f3;
     height: 100px;
-    padding: 20px 0px;
+    padding: 10px  54px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid #EEEEEE;
 }
 #tabs-body{
     background-color: white;
-    height: 450px;
+    height:auto;
    
 }
 .tab {
@@ -154,12 +167,11 @@ border-radius: 10px;
     align-items: center;
     justify-content: space-around;
     max-width: 52px;
-    border-bottom: 3px groove rgb(12, 12, 12);
+    height: 108px;
 }
 .tab img{
     height: 24px;
     width: 24px;
-    margin-bottom: 1rem;
 }
 .tab span{
     border-bottom:none;
@@ -175,14 +187,18 @@ border-radius: 10px;
 }
 .tab-content{
     padding: 2rem 3rem;
+    display: none;
+}
+.tab-content-active{
+    display: block;
 }
 .tab-content div a {
     color: rgb(80, 80, 80);
     font-weight: 300;
 }
 .tab-content div h2 {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 700;
 }
 .tab-content div{
@@ -199,17 +215,50 @@ border-radius: 10px;
 .content-item{
     padding:1em;
 }
-.buttonblack
-{
+.button-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.button-round{
     padding: 5px 20px;
-    background-color: black;
-    color: white;
     height: 50px;
     width: auto;
     border-radius: 8px;
     font-size: 18px;
     font-weight: 500;
 }
+.gray-btn{
+    background-color: rgb(231, 227, 227);
+    color: black;
+    border: none;
+}
+.black-btn{
+    background-color: black;
+    color: white;
+}
+input{
+    background-color: #F6F6F6;
+    min-height: 52px;
+    background-color: #F6F6F6;
+    padding-right: 33px;
+    padding-left: 41px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: none;
+    color: #000000;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
 
 /*section main*/
 /**/
@@ -224,12 +273,70 @@ border-radius: 10px;
     justify-content: space-between;
 }
 .area-item{
-    width: 40vw;
-    /*padding: 1em;*/
+    width: 42vw;
 }
+.area-item div{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+    
+    #tab-holder{
+        position: inherit;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #header-image{
+        max-height: 33vw;
+    }
+    #scenery-image{
+        max-height: 66vw;
+    }
+    .content{
+        padding: 1rem 1rem;
+    }
+    .gray-area {
+        padding: 2rem 2rem!important;
+    }
+    #tabs-head{
+     
+        padding-right: 30vw;
+        padding-left: 3rem;
+    }
+    footer{
+        padding: 2rem!important;
+    }
+    .center-area{
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .button-holder button{
+        width: 100%;
+        
+    }
+   
+    h2{
+        font-size: 1.5rem!important;
+        line-height: 2rem!important;
+    }
+    .nav-bar{
+        padding: 1rem 0rem;
+    }
+    #logo{
+        margin-left: 2rem;
+    }
+    .head-links{
+        padding-left: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .area-item{
-        width: 80vw;
+    .area-item {
+        width: 100vw;
+       
     }
 }
 .area-item a{
@@ -256,9 +363,9 @@ border-radius: 10px;
     float: left;
     align-items: center;
     background-color: white;
-    min-width: 370px;
+    min-width: 358px;
 }
-card a{
+.card a{
     color: rgb(80, 80, 80);
     font-weight: 300;
     font-size: 18px;
@@ -299,4 +406,15 @@ footer{
 }
 .ul-item div a:hover{
     color: rgb(80, 80, 80);
+}
+
+
+/*******Tabs*****/
+
+.tabs-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    flex-direction: row;
+    list-style: none;
 }
